@@ -2,37 +2,65 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox{
+  width: 300px;
+  /* border:1px solid red; */
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputBox input{
+  width: 30px;
+  height: 30px;
+  margin: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardPage{
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card{
+  height: 300px;
+  width: 500px;
+  border-radius: 1rem;
+  /* border: 3px solid gray; */
+  margin: auto;
+  background-image: linear-gradient(rgb(251, 250, 250),rgb(150, 216, 237),rgb(202, 193, 193));
+}
+.bankName{
+  text-align:right;
+  margin-right: 10%;
+}
+.cardInputBox input{
+  width: 60px;
+  height: 20px;
+  background-color:transparent;
+  border:none;
+  border-bottom: 1px solid;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(237, 152, 5);
+}
+.cardHolderName{
+  text-align: right;
+  margin-right: 10%;
+  /* color:white; */
+  font-size: 24px;
+}
+.cardHolderName h2{
+  background: linear-gradient(to right, #1a262c 0%, #99ffee 100%);
+  background-clip:text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* border:1px solid black; */
+  margin-bottom: -10px;
+}
+.cardHolderName span{
+  margin-top: -10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  font-size: 12px;
+  color: gray;
 }
